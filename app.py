@@ -11,7 +11,7 @@ load_dotenv()
 ## Langsmith Tracking
 
 
-groq_api_key=os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets["GROQ_API_KEY"]
 model=ChatGroq(model="Gemma2-9b-It",groq_api_key=groq_api_key)
 ## Prompt Template
 prompt=ChatPromptTemplate.from_messages(
