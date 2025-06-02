@@ -22,7 +22,7 @@ prompt=ChatPromptTemplate.from_messages(
 )
 
 ## streamlit framework
-st.title("LLM-Chat Assistant by Groq")
+st.title("LLM-Chat Assistant using Groq")
 input_text=st.text_input("What question you have in mind?")
 
 
